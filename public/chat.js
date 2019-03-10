@@ -1,6 +1,6 @@
 // Make connection
 
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://dhpudg05.herokuapp.com/');
 
 // Query DOM
 
