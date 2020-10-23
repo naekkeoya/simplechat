@@ -2,25 +2,29 @@
   --blue: #4D77B3;
   --lightPurple: #B78F93;
   --lightBlue: #AAAAAA;
+  --white: white;
 }
 
+/* 
 @font-face {
   font-family: "Oswald", sans-serif;
   font-family: "Open Sans", sans-serif;
-}
+} */
 
 body {
     font-family: "Oswald", sans-serif;
 }
 
 h1 {
-  color: var(--blue);
+  color: var(--white);
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
 }
 
 ::placeholder {
-  color: var(--lightPurple);
-  font-family: "Oswald", sans-serif;
+    color: var(--white);   
+    font-family: "Oswald", sans-serif;
 }
 
 h2{
@@ -35,10 +39,15 @@ h2{
     border: 1px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
+    margin-top: 50px;
+}
+
+#chat-title {
+    height: 60px;
 }
 
 #chat-window{
-    height: 400px;
+    height: 350px;
     overflow: auto;
     background: #f9f9f9;
 }
