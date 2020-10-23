@@ -2,17 +2,12 @@ var PORT = process.env.PORT || 4000;
 var express = require ('express');
 var socket = require ('socket.io');
 
-// App setup
-
 var app = express();
 var server = app.listen(PORT, function(){
-  console.log('listening to request on poort 4000');
+  console.log(`Server listening at http://localhost:${PORT}`);
 });
 
-// Static files
-app.use (express.static('public'));
-
-// Socket setup
+app.use (express.static('public'))
 
 var io = socket(server);
 
